@@ -26,18 +26,18 @@
         time: '1713944774'
     }
 
-    dynamicLoading.js('/static-fliphtml5-com/resourceFiles/html5_templates/js/deString.js?1713944774');
-    dynamicLoading.js('/static-fliphtml5-com/resourceFiles/html5_templates/js/jquery-3.5.1.min.js')
-    dynamicLoading.css('/static-fliphtml5-com/resourceFiles/html5_templates/template/Popular/style/style.css?1713944774')
-    dynamicLoading.js('/static-fliphtml5-com/resourceFiles/html5_templates/template/Popular/javascript/book.min.js?1713944774')
+    dynamicLoading.js('./static-fliphtml5-com/resourceFiles/html5_templates/js/deString.js?1713944774');
+    dynamicLoading.js('./static-fliphtml5-com/resourceFiles/html5_templates/js/jquery-3.5.1.min.js')
+    dynamicLoading.css('./static-fliphtml5-com/resourceFiles/html5_templates/template/Popular/style/style.css?1713944774')
+    dynamicLoading.js('./static-fliphtml5-com/resourceFiles/html5_templates/template/Popular/javascript/book.min.js?1713944774')
 
     var time = new Date().getTime()
     var pageEditorJs = './files/pageEditor.js?' + time;
     var editorTextSvgConfigJs = './files/textSvgConfig.js?' + time;
-    var indexEditorAppCss = '/static-fliphtml5-com/resourceFiles/yzReader/templates/Slide/css/app.css';
-    var indexEditorChunkVendorsCss = '/static-fliphtml5-com/resourceFiles/yzReader/templates/Slide/css/chunk-vendors.css';
-    var indexEditorAppJs = '/static-fliphtml5-com/resourceFiles/yzReader/templates/Slide/js/app.js';
-    var indexEditorChunkVendorsJs = '/static-fliphtml5-com/resourceFiles/yzReader/templates/Slide/js/chunk-vendors.js';
+    var indexEditorAppCss = './static-fliphtml5-com/resourceFiles/yzReader/templates/Slide/css/app.css';
+    var indexEditorChunkVendorsCss = './static-fliphtml5-com/resourceFiles/yzReader/templates/Slide/css/chunk-vendors.css';
+    var indexEditorAppJs = './static-fliphtml5-com/resourceFiles/yzReader/templates/Slide/js/app.js';
+    var indexEditorChunkVendorsJs = './static-fliphtml5-com/resourceFiles/yzReader/templates/Slide/js/chunk-vendors.js';
 
     var loadPageEditorJs = true;
     if(typeof htmlConfig != 'undefined' && typeof htmlConfig['fileExist'] != 'undefined' && typeof htmlConfig['fileExist']['pageEditor'] != 'undefined') {
@@ -63,7 +63,7 @@
     }
 
     if (window.htmlConfig && window.htmlConfig.pageEditor) window.pageEditor = window.htmlConfig.pageEditor;
-    window.pageEditorUrl = '/static-fliphtml5-com/resourceFiles/html5_templates/js/pageItems.min.js?1713944774';
+    window.pageEditorUrl = './static-fliphtml5-com/resourceFiles/html5_templates/js/pageItems.min.js?1713944774';
     if (window.pageEditor &&
         ((!pageEditor.pageAnnos && pageEditor.length > 0) ||
             (pageEditor.pageAnnos && pageEditor.pageAnnos.length > 0))) {
@@ -71,8 +71,8 @@
     }
     window.pageEditorUrl = null;
 
-    window.pageSliderUrl = '/static-fliphtml5-com/resourceFiles/js/flipHtml5.hiSlider2.min.js';
-    window.pageSliderCssUrl = '/static-fliphtml5-com/resourceFiles/css/hiSlider2.min.css';
+    window.pageSliderUrl = './static-fliphtml5-com/resourceFiles/js/flipHtml5.hiSlider2.min.js';
+    window.pageSliderCssUrl = './static-fliphtml5-com/resourceFiles/css/hiSlider2.min.css';
     if (window.sliderJS &&
         window.sliderJS.length > 0) {
         dynamicLoading.js(pageSliderUrl)
@@ -81,14 +81,14 @@
     window.pageSliderUrl = null;
 
 
-    // window.pageSliderUrl = '/static-fliphtml5-com/resourceFiles/html5_templates/js/LoadSlider.js?1713944774';
+    // window.pageSliderUrl = './static-fliphtml5-com/resourceFiles/html5_templates/js/LoadSlider.js?1713944774';
     // if (window.sliderJS &&
     //     window.sliderJS.length > 0) {
     //     dynamicLoading.js(pageSliderUrl)
     // }
     // window.pageSliderUrl = null;
 
-    dynamicLoading.js('/static-fliphtml5-com/resourceFiles/html5_templates/template/Popular/javascript/main.min.js?1713944774')
+    dynamicLoading.js('./static-fliphtml5-com/resourceFiles/html5_templates/template/Popular/javascript/main.min.js?1713944774')
 
     var loadPlugin = true;
     if(typeof htmlConfig != 'undefined' && typeof htmlConfig['fileExist'] != 'undefined' && typeof htmlConfig['fileExist']['plugin'] != 'undefined') {
@@ -98,13 +98,13 @@
         if (!window.bookConfig) return;
 
         window.clearInterval(interval);
-        dynamicLoading.js('/static-fliphtml5-com/resourceFiles/js/encryption/encryption.min.js?1713944774')
+        dynamicLoading.js('./static-fliphtml5-com/resourceFiles/js/encryption/encryption.min.js?1713944774')
         if(loadPlugin) {
-            dynamicLoading.js('/static-fliphtml5-com/resourceFiles/js/plugin.js?1713944774')
+            dynamicLoading.js('./static-fliphtml5-com/resourceFiles/js/plugin.js?1713944774')
         }
-        dynamicLoading.js('/static-fliphtml5-com/resourceFiles/js/statistic.js?1713944774')
-        dynamicLoading.js('/static-fliphtml5-com/resourceFiles/js/writeLog.js?1713944774')
-        dynamicLoading.js('/static-fliphtml5-com/resourceFiles/js/visitinfo.js?1713944774')
-        dynamicLoading.js('/static-fliphtml5-com/resourceFiles/js/FlipBookPlugins.min.js')
+        dynamicLoading.js('./static-fliphtml5-com/resourceFiles/js/statistic.js?1713944774')
+        dynamicLoading.js('./static-fliphtml5-com/resourceFiles/js/writeLog.js?1713944774')
+        dynamicLoading.js('./static-fliphtml5-com/resourceFiles/js/visitinfo.js?1713944774')
+        dynamicLoading.js('./static-fliphtml5-com/resourceFiles/js/FlipBookPlugins.min.js')
     }, 100);
 })();

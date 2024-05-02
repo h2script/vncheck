@@ -106,8 +106,8 @@ setTimeout(function() {
 							imgSrc = "/visit/" + ad.name + ".png";
 							// iframeSrc = "/visit/banner_" + ad.width + "_" + ad.height + ".html";  // 已停用
 						} else {
-							imgSrc = "/static-fliphtml5-com/book/banner/" + ad.name + ".png";
-							// iframeSrc = "/static-fliphtml5-com/book/banner/banner_" + ad.width + "_" + ad.height + ".html"; // 已停用
+							imgSrc = "./static-fliphtml5-com/book/banner/" + ad.name + ".png";
+							// iframeSrc = "./static-fliphtml5-com/book/banner/banner_" + ad.width + "_" + ad.height + ".html"; // 已停用
 						}
 	
 						var $body = $("body");
@@ -144,7 +144,7 @@ setTimeout(function() {
 							width: 22,
 							height: 22,
 							cursor: "pointer",
-							background: "url(/static-fliphtml5-com/book/banner/Vector.svg) 1px 1px no-repeat",
+							background: "url(./static-fliphtml5-com/book/banner/Vector.svg) 1px 1px no-repeat",
 							left: "95%",
 							top: "-6px",
 							marginLeft: "2px",
